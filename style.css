@@ -42,7 +42,6 @@
     background-color: var(--DarkGrayishBlue);
     margin: auto;
     padding: 2rem 0;
-    overflow-y: scroll;
     z-index: 0;
 }
 
