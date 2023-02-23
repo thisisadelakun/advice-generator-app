@@ -1,3 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root {
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+}
+
+.body {
+    background-color: var(--DarkBlue);
+    width: 100%;
+    min-height: 100vh;
+    place-content: center;
+}
+
+
+.advice {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -30%);
+    width: 100%;
+    height: 32rem;
+    margin: auto;
+    padding: 3rem 0;
+    overflow-y: hidden;
+
+}
+
+.advice-card {
+    position: relative;
+    width: 19rem;
+    height: 23rem;
+    border-radius: 10px;
+    background-color: var(--DarkGrayishBlue);
+    margin: auto;
+    padding: 2rem 0;
+    overflow-y: scroll;
+    z-index: 0;
+}
+
+.advice-card-header {
+    margin: 1rem 0rem;
+}
+
+#advice-number {
+    letter-spacing: 3px;
+    color: var(--NeonGreen);
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center
+}
+
+.advice-card-main {
+    width: 90%;
+    margin: auto;
+}
+
+#advice-text {
+    color: var(--LightCyan);
+    font-size: 23px;
+    font-weight: 800;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.advice-card-divider {
+    width: 90%;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+.desktop-divider {
+    display: none;
+}
+
+#btn {
+    position: absolute;
+    background-color: var(--NeonGreen);
+    border-radius: 50%;
+    padding: 1rem 1rem;
+    width: 3.5rem;
+    display: flex;
+    justify-content: center;
+    bottom: 9%;
+    left: 50%;
+    transform: translate(-50%, -9%);
+    z-index: 500;
+    border: none;
+    margin: 16px 0px;
+}
+
+#btn:hover {
+    box-shadow: 0px 0px 18px 8px var(--NeonGreen);
+}
+
+@media screen and (min-width:375px) {
+    .advice-card {
+        width: 22rem;
+        height: 23rem;
+    }
+
+}
+
+@media screen and (min-width:600px) {
+    #advice-number {
+        font-size: 18px;
+        letter-spacing: 5px;
+    }
+
+    #advice-text {
+        font-size: 28px;
+        margin: 2rem 0;
+    }
+
+    .advice-card {
+        width: 35rem;
+        height: 23rem;
+    }
+
+    .desktop-divider {
+        display: flex;
+    }
+
+    .mobile-divider {
+        display: none;
+    }
+
+}
 
 
 

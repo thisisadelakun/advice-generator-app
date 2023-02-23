@@ -5,9 +5,12 @@ let btn = document.getElementById("btn");
 function getAdvice() {
     fetch('https://api.adviceslip.com/advice')
         .then((res) => res.json())
-        .then((slip) => {
-            Number.innerText = `ADVICE #${slip.slip_id}`;
-            Advice.innerText = slip.advice;
+        .then((data) => {
+            Number.innerText = `ADVICE #${data.slip.id}`;
+            Advice.innerText = `"${data.slip.advice}"`;
+        })
+        .catch((error) => {
+            console.error('error:', error);
         });
 }
 
