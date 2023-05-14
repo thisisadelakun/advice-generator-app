@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/thisisadelakun/Advice-generator-app)
+- Solution URL: [GitHub](https://github.com/thisisadelakun/advice-generator-app)
 - Live Site URL: [Netlify](https://adelakunadvice.netlify.app/)
 
 
